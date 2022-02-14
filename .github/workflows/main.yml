@@ -32,8 +32,8 @@ jobs:
       - name: Build App
         run: npm run build
 
-      - name: Semantic Realese
+      - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: npx semantic-realese
+        run: npx semantic-release
